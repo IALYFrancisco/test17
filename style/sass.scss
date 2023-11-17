@@ -24,6 +24,8 @@
         form {
             width: 300px;
             height: 200px;
+            opacity: 0;
+            transition: 1s;
 
             fieldset {
                 width: inherit;
@@ -35,12 +37,14 @@
                     color: orange;
                     padding-left: 10px;
                     padding-right: 10px;
+                    font-size: 20px;
                 }
 
                 div.input {
                     width: 100%;
                     height: 35px;
                     margin-bottom: 20px;
+                    position: relative;
 
                     input {
                         width: inherit;
@@ -50,6 +54,13 @@
                         border-style: solid;
                         outline: none;
                         padding-left: 10px;                       
+                    }
+
+                    img {
+                        width: 25px;
+                        position: absolute;
+                        right: 10px;
+                        top: 5px;
                     }
                 }
 
@@ -62,5 +73,6 @@
                 }
             }
         }
+
     }
 }
